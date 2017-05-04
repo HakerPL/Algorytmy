@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlgorytmyClass</class>
+ <widget class="QMainWindow" name="AlgorytmyClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>593</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Algorytmy</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinAndMaxSize</enum>
+      </property>
+      <item>
+       <widget class="QTextEdit" name="tbScreen">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOn</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustToContents</enum>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>160</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>10</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Number to Add or Delete</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="sbInt">
+           <property name="minimum">
+            <number>-1000</number>
+           </property>
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnAddBeginning">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Add Beginning</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnAddOnEnd">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Add On End</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnDeleteList">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Delete List</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnDeleteFirst">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Delete First</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnDeleteByItem">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Delete By Item</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnDeleteTwoEven">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Delete Two Even</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnChangeWithNext">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Change With Next</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnRetrunContentOfList">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Show Content Of List</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnCount">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Count Of Elements On List</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Algorytmy.qrc"/>
+ </resources>
+ <connections/>
+</ui>

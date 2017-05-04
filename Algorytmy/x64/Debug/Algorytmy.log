@@ -1,0 +1,13 @@
+﻿  Moc'ing Algorytmy.h...
+  Uic'ing MainWindows\View\Algorytmy.ui...
+  Rcc'ing MainWindows\View\Algorytmy.qrc...
+RCC : warning : No resources in 'D:\Moje Programy\C++\Algorytmy\Algorytmy\MainWindows\View\Algorytmy.qrc'.
+  
+  Algorytmy.cpp
+  moc_Algorytmy.cpp
+  main.cpp
+  OneWay.cpp
+  Generating Code...
+  qrc_Algorytmy.cpp
+  Algorytmy.vcxproj -> D:\Moje Programy\C++\Algorytmy\x64\Debug\Algorytmy.exe
+  Algorytmy.vcxproj -> D:\Moje Programy\C++\Algorytmy\x64\Debug\Algorytmy.pdb (Full PDB)
