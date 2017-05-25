@@ -6,12 +6,7 @@ template class OneWay<float>;
 template class OneWay<double>;
 
 template <typename T>
-OneWay<T>::OneWay()
-{
-	head  = nullptr;
-	last  = nullptr;
-	count = 0;
-}
+OneWay<T>::OneWay() : BaseList<T>() {}
 
 template <typename T>
 OneWay<T>::~OneWay()
@@ -20,25 +15,9 @@ OneWay<T>::~OneWay()
 }
 
 template <typename T>
-string OneWay<T>::RetrunContentOfList() const
-{
-	string contentReturn = "HEAD->";
-	nodeList<T>* helper = head;
-
-	while(helper != nullptr)
-	{
-		contentReturn += to_string(helper->item) + "->";
-		helper = helper->next;
-	}
-
-	contentReturn += "NULL";
-	return contentReturn;
-}
-
-template <typename T>
 int OneWay<T>::Count() const
 {
-	return count;
+	return countObject;
 }
 
 template <typename T>
@@ -53,7 +32,7 @@ void OneWay<T>::AddBeginning(T item)
 	if (last == nullptr)
 		last = head;
 
-	count++;
+	countObject++;
 }
 
 template <typename T>
@@ -71,7 +50,7 @@ void OneWay<T>::AddOnEnd(T item)
 
 	last->next = newItem;
 	last = newItem;
-	count++;
+	countObject++;
 }
 
 template <typename T>
@@ -96,8 +75,8 @@ void OneWay<T>::DeleteFirst()
 	head = head->next;
 	delete helper;
 
-	if (count > 0)
-		count--;
+	if (countObject > 0)
+		countObject--;
 }
 
 template <typename T>
@@ -126,8 +105,8 @@ void OneWay<T>::DeleteByItem(T item)
 			p0->next = p1->next;
 			delete p1;
 
-			if (count > 0)
-				count--;
+			if (countObject > 0)
+				countObject--;
 
 			break;
 		}
@@ -173,8 +152,8 @@ void OneWay<T>::DeleteTwoEven()
 
 			delete h0, h1;
 
-			if (count > 1)
-				count -= 2;
+			if (countObject > 1)
+				countObject -= 2;
 
 			continue;
 		}
@@ -185,7 +164,7 @@ void OneWay<T>::DeleteTwoEven()
 }
 
 template <typename T>
-void OneWay<T>::ChangeWithNext(T item)
+void OneWay<T>::ChangeWithNextByItem(T item)
 {
 	if (head == nullptr || head->next == nullptr)
 		return;

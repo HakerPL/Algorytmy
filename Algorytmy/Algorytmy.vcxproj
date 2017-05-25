@@ -68,6 +68,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithm\BaseAlgorithm.cpp" />
     <ClCompile Include="MainWindows\Source\Algorytmy.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_Algorytmy.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -109,7 +110,11 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Algorithm\BaseAlgorithm.h" />
+    <ClInclude Include="Algorithm\BubbleSort\BubbleSort.h" />
+    <ClInclude Include="Algorithm\MergeSort\MergeSort.h" />
     <ClInclude Include="GeneratedFiles\ui_Algorytmy.h" />
+    <ClInclude Include="List\BaseList.h" />
     <ClInclude Include="List\One-way\Header\OneWay.h" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +128,13 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\logo.ico" />
+    <Image Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

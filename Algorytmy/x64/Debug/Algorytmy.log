@@ -3,11 +3,14 @@
   Rcc'ing MainWindows\View\Algorytmy.qrc...
 RCC : warning : No resources in 'D:\Moje Programy\C++\Algorytmy\Algorytmy\MainWindows\View\Algorytmy.qrc'.
   
+  BaseAlgorithm.cpp
   Algorytmy.cpp
   moc_Algorytmy.cpp
   main.cpp
   OneWay.cpp
   Generating Code...
+d:\moje programy\c++\algorytmy\algorytmy\algorithm\bubblesort\bubblesort.h(90): warning C4700: uninitialized local variable 'lastChange' used
+d:\moje programy\c++\algorytmy\algorytmy\algorithm\bubblesort\bubblesort.h(46): warning C4700: uninitialized local variable 'lastChange' used
   qrc_Algorytmy.cpp
   Algorytmy.vcxproj -> D:\Moje Programy\C++\Algorytmy\x64\Debug\Algorytmy.exe
   Algorytmy.vcxproj -> D:\Moje Programy\C++\Algorytmy\x64\Debug\Algorytmy.pdb (Full PDB)
